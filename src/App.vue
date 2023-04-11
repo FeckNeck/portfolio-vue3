@@ -2,9 +2,9 @@
 import AboutMe from "./components/AboutMe.vue";
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
-import AppProjects from "./components/AppProjects.vue";
-import AppTechnologies from "./components/AppTechnologies.vue";
+import ProjectList from "./components/ProjectList.vue";
 import CoverSheet from "./components/CoverSheet.vue";
+import TechnoList from "./components/TechnoList.vue";
 </script>
 
 <template>
@@ -12,8 +12,8 @@ import CoverSheet from "./components/CoverSheet.vue";
   <main class="container">
     <CoverSheet />
     <AboutMe />
-    <AppTechnologies />
-    <AppProjects />
+    <TechnoList />
+    <ProjectList />
   </main>
   <AppFooter />
 </template>

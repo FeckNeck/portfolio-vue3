@@ -3,18 +3,20 @@ import { ref } from "vue";
 import ThemeSwitch from "./ThemeSwitch.vue";
 const open = ref(false);
 
-// const openMenu = () => {
-//   open.value = !open.value;
-//   open.value
-//     ? document.body.classList.add("menu-open")
-//     : document.body.classList.remove("menu-open");
-// };
+const isOpen = () => {
+  return open.value ? "Close" : "Open";
+};
 </script>
 
 <template>
   <header class="container">
     <div class="header-content">
-      <button class="menu" @click="open = !open">
+      <button
+        class="menu"
+        @click="open = !open"
+        :title="isOpen() + ' menu'"
+        :aria-label="isOpen() + 'menu'"
+      >
         <svg
           v-if="!open"
           width="21"
@@ -45,23 +47,34 @@ const open = ref(false);
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
-      <img src="../assets/icons/logo.png" alt="Logo" class="logo" />
       <img
-        src="../assets/icons/logo-mobile.png"
+        src="../assets/images/logo.png"
+        alt="Logo"
+        class="logo"
+        width="96"
+        height="31"
+      />
+      <img
+        src="../assets/images/logo_mobile.png"
         alt="Logo"
         class="logo-mobile"
       />
       <nav class="desktop-nav">
         <ul class="links">
           <li class="link">
-            <RouterLink to="/pokedex">Présentation</RouterLink>
+            <a href="/">Présentation</a>
           </li>
-          <li class="link"><RouterLink to="/teams">Projets</RouterLink></li>
+          <li class="link"><a href="#projects">Projets</a></li>
         </ul>
       </nav>
       <div class="interactions">
         <a class="btn-contact" href="mailto:mathis.dousse@outlook.fr">
-          <img src="../assets/icons/mail.svg" alt="Me contacter" />
+          <img
+            src="../assets/images/mail.svg"
+            alt="Me contacter"
+            width="15"
+            height="15"
+          />
           <span>Me contacter</span>
         </a>
         <ThemeSwitch />
@@ -70,12 +83,17 @@ const open = ref(false);
     <nav :hidden="!open" class="mobile-nav">
       <ul class="links">
         <li class="link">
-          <RouterLink to="/pokedex">Présentation</RouterLink>
+          <a href="/">Présentation</a>
         </li>
-        <li class="link"><RouterLink to="/teams">Projets</RouterLink></li>
+        <li class="link"><a href="#projects">Projets</a></li>
         <li class="contact">
           <a class="btn-contact" href="mailto:mathis.dousse@outlook.fr">
-            <img src="../assets/icons/mail.svg" alt="Me contacter" />
+            <img
+              src="../assets/images/mail.svg"
+              alt="Me contacter"
+              width="15"
+              height="15"
+            />
             <span>Me contacter</span>
           </a>
         </li>
@@ -122,6 +140,7 @@ const open = ref(false);
   transition: color 300ms ease;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  cursor: pointer;
 }
 
 .link:hover,
@@ -160,6 +179,10 @@ const open = ref(false);
 
 .btn-contact:hover {
   filter: brightness(0.85);
+}
+
+.btn-contact > img {
+  margin-bottom: 1px;
 }
 
 .contact {

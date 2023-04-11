@@ -1,0 +1,59 @@
+[
+    {
+        "owner": "FeckNeck",
+        "repo": "portfolio-vue3",
+        "link": "https://github.com/FeckNeck/portfolio-vue3",
+        "description": "My personnal portfolio built with vue3 and pure CSS.",
+        "image": "https://opengraph.githubassets.com/1/FeckNeck/portfolio-vue3",
+        "language": "TypeScript",
+        "languageColor": "#3178c6",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "FeckNeck",
+        "repo": "deezer-clone",
+        "link": "https://github.com/FeckNeck/deezer-clone",
+        "description": "A deezer clone I built using vue3.",
+        "image": "https://opengraph.githubassets.com/1/FeckNeck/deezer-clone",
+        "language": "Vue",
+        "languageColor": "#41b883",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "FeckNeck",
+        "repo": "memory-game",
+        "link": "https://github.com/FeckNeck/memory-game",
+        "description": "Built a memory game using vue3.",
+        "image": "https://opengraph.githubassets.com/1/FeckNeck/memory-game",
+        "website": "https://memory-game-feckneck.vercel.app",
+        "language": "Vue",
+        "languageColor": "#41b883",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "FeckNeck",
+        "repo": "tic-tac-toe",
+        "link": "https://github.com/FeckNeck/tic-tac-toe",
+        "description": "The first project I made using vue3 to get familiar with composition API.",
+        "image": "https://opengraph.githubassets.com/1/FeckNeck/tic-tac-toe",
+        "website": "https://tic-tac-toe-feckneck.vercel.app",
+        "language": "Vue",
+        "languageColor": "#41b883",
+        "stars": 0,
+        "forks": 0
+    },
+    {
+        "owner": "FeckNeck",
+        "repo": "vue3-adonisJs-todo-list",
+        "link": "https://github.com/FeckNeck/vue3-adonisJs-todo-list",
+        "description": "Fullstack application using vue3 composition api and AdonisJs5 for the back-end",
+        "image": "https://opengraph.githubassets.com/1/FeckNeck/vue3-adonisJs-todo-list",
+        "language": "TypeScript",
+        "languageColor": "#3178c6",
+        "stars": "1",
+        "forks": 0
+    }
+]

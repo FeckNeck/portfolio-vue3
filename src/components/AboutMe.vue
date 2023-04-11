@@ -11,7 +11,7 @@
         </p>
       </div>
       <div>
-        <img src="../assets/icons/me.jpg" alt="Photo de moi" class="me" />
+        <img src="../assets/images/me.jpg" alt="Photo de moi" class="me" />
       </div>
       <div>
         <p>
@@ -19,9 +19,18 @@
           de valider mon année. Si vous êtes à la recherche d'un stagiaire et
           potentiel alternant pour l'année qui suit, n'hésitez pas à me
           contacter par
-          <a href="mailto:mathis.dousse@outlook.fr">mail</a>
+          <a
+            href="mailto:mathis.dousse@outlook.fr"
+            class="social-link"
+            aria-label="link to my mail"
+            >mail</a
+          >
           ou sur
-          <a href="https://www.linkedin.com/in/mathis-dousse" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/mathis-dousse"
+            target="_blank"
+            class="social-link"
+            aria-label="link to my linkedin"
             >linkedin</a
           >.
         </p>
@@ -40,6 +49,32 @@
   flex-basis: 25%;
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+.social-link {
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.social-link::after {
+  background-color: var(--teal);
+  height: 6%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  min-height: 2px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  transition: height 300ms ease;
+}
+
+.social-link:hover::after {
+  height: 100%;
+}
+
+.social-link:hover {
+  color: white;
 }
 
 .me {

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
 
-let theme = ref("");
+const theme = ref("");
 
 onMounted(() => {
   theme.value = getInitialColorMode();

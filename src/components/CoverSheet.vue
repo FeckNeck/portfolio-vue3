@@ -3,7 +3,7 @@
     <div class="cover-infos">
       <p class="title">Mathis Dousse</p>
       <p class="sub-title">Etudiant en informatique</p>
-      <a href="/cv.pdf" target="_blank" class="cv">
+      <a href="/cv.pdf" target="_blank" class="cv" aria-label="Download CV">
         <svg
           width="24"
           height="24"
@@ -21,7 +21,7 @@
         <span>Download CV</span>
       </a>
     </div>
-    <img src="../assets/icons/dev.svg" alt="Cover" class="cover-img" />
+    <img src="../assets/images/dev.svg" alt="Cover" class="cover-img" />
   </section>
 </template>
 
