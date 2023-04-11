@@ -35,7 +35,6 @@ onMounted(() => fetchProjects());
 @media (max-width: 768px) {
   .projects {
     grid-auto-columns: calc((100% - 1rem) / 1);
-    overflow-y: auto;
   }
 }
 </style>
