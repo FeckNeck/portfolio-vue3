@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { Project } from "../service/getProjects";
+
 defineProps<{
   project: Project;
 }>();
