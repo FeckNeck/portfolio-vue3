@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import { getProjects } from "../service/getProjects";
+import { getProjects, Project } from "../service/getProjects";
 
 export function useProjects() {
   const projects = ref<Project[] | null>(null);
