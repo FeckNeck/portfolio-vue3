@@ -4,10 +4,11 @@
     <div class="about-me">
       <div>
         <p>
-          Actuellement en première année de master informatique à l'université
-          Lyon 2, je me passionne pour le développement et en particulier dans
-          le domaine du web. J'ai pour ambition de devenir développeur fullstack
-          et mettre à profit mes connaissances et compétences en entreprise.
+          Actuellement en seconde année de master MALIA (Machine Learning
+          appliqué à l'Intelligence Artificielle) à l'université Lyon 2, je me
+          passionne pour le développement et en particulier dans le domaine du
+          web. J'ai pour ambition de devenir développeur fullstack et mettre à
+          profit mes connaissances et compétences en entreprise.
         </p>
       </div>
       <div>
@@ -15,9 +16,9 @@
       </div>
       <div>
         <p>
-          Mon cursus m'offre l'opportunité de réaliser un stage dans l'objectif
-          de valider mon année. Si vous êtes à la recherche d'un stagiaire et
-          potentiel alternant pour l'année qui suit, n'hésitez pas à me
+          Mon cursus m'offre l'opportunité de réaliser une alternance dans
+          l'objectif de valider mon année. Si vous êtes à la recherche d'un
+          alternant et potentiel CDI pour l'année qui suit, n'hésitez pas à me
           contacter par
           <a
             href="mailto:mathis.dousse@outlook.fr"
